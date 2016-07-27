@@ -13,8 +13,8 @@ handlers:
   static_files: index.html
   upload: index\.html
 
-- url: /bootstrap
-  static_dir: bootstrap
+- url: /webapp
+  static_dir: webapp
 
 - url: /.*
   script: guestbook.app
