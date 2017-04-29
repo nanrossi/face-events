@@ -4,8 +4,56 @@
     <meta charset="utf-8">
     <title>Home</title>
     <link rel="shortcut icon" href="static/images/favicon.ico">
+    <link rel="stylesheet" href="static/css/lib/bulma.css">
   </head>
   <body>
-    <h1>It's Works!</h1>
+    <nav class="nav has-shadow">
+      <div class="container">
+        <div class="nav-left">
+          <a class="nav-item"></a>
+          <a class="nav-item is-tab is-hidden-mobile is-active">Home</a>
+        </div>
+        <span class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class="nav-right nav-menu">
+          <a class="nav-item is-tab">Log out</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="columns">
+        <div class="column">
+          <aside class="menu">
+            <p class="menu-label ">
+              LISTA
+            </p>
+            <ul class="menu-list">
+            </ul>
+          </aside>
+        </div>
+        <div class="column">
+          <div class="form">
+            <div class="field">
+              <label class="label">Item</label>
+            </div>
+            <div class="field is-grouped">
+              <p class="control">
+                <input id="texto" class="input" type="text" placeholder="Add a item">
+              </p>
+              <p class="control">
+                <button class="button is-primary" onclick="addItem()">Add</button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column"></div>
+      </div>
+    </section>
+
+  <script src="static/js/index.js"></script>
   </body>
 </html>
